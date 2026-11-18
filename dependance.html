@@ -44,9 +44,9 @@
       }
       /* Smartphone: una colonna */
       @media (max-width: 600px) {
-        .galleria { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-rows: 240px; }
-        .galleria .g-grande { grid-column: span 1; grid-row: span 1; height: 300px; }
-        .galleria .g-larga { grid-column: span 1; height: 300px; }
+        .galleria { grid-template-columns: minmax(0, 1fr); grid-template-rows: 300px 240px 240px 240px 300px; }
+        .galleria .g-grande { grid-column: span 1; grid-row: span 1; }
+        .galleria .g-larga { grid-column: span 1; }
       }
     </style>
     <link rel="stylesheet" href="style.css" />
