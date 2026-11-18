@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Terrazza – La terrazza e il giardino</title>
+    <meta
+      name="description"
+      content="La terrazza e il giardino: il silenzio della collina nella Valle dell'Irno."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background: #f4f1ea;
+      }
+      a {
+        color: #4a5634;
+      }
+      a:hover {
+        color: #2f3820;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
+    <div
+      style="
+        font-family: &quot;Mulish&quot;, sans-serif;
+        color: #2b2a26;
+        background: #f4f1ea;
+        min-height: 100vh;
+      "
+    >
+      <header
+        class="site-header"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px 32px;
+          padding: 20px 5%;
+          border-bottom: 1px solid #ddd6c8;
+          background: #f4f1ea;
+        "
+      >
+        <a
+          href="index.html"
+          style="
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #2b2a26;
+            text-decoration: none;
+          "
+          >La Terrazza</a
+        >
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principale"
+          aria-label="Apri il menu"
+        >
+          <svg
+            class="icon-burger"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <svg
+            class="icon-close"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </button>
+        <nav
+          id="menu-principale"
+          class="site-nav"
+          aria-label="Principale"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 28px;
+            font-size: 15px;
+            font-weight: 600;
+          "
+        >
+          <a
+            href="dependance.html"
+            style="color: #2b2a26; text-decoration: none; padding: 12px 0"
+            >La dependance</a
+          >
+          <a
+            href="terrazza.html"
+            aria-current="page"
+            style="
+              color: #4a5634;
+              text-decoration: underline;
+              text-underline-offset: 6px;
+              padding: 12px 0;
+            "
+            >Terrazza e giardino</a
+          >
+          <a
+            href="dintorni.html"
+            style="color: #2b2a26; text-decoration: none; padding: 12px 0"
+            >Nei dintorni</a
+          >
+          <a
+            href="contatti.html"
+            style="
+              color: #ffffff;
+              background: #4a5634;
+              text-decoration: none;
+              padding: 12px 22px;
+              border-radius: 2px;
+            "
+            >Richiedi disponibilità</a
+          >
+        </nav>
+      </header>
+
+      <section
+        style="
+          position: relative;
+          height: calc(100svh - 89px);
+          min-height: 480px;
+          max-height: 900px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 0 5% 48px;
+          box-sizing: border-box;
+          background: url(&quot;img/terrazza/hero.jpg&quot;) center 70% / cover
+            no-repeat #2f3527;
+        "
+      >
+        <div
+          style="
+            max-width: 760px;
+            text-align: center;
+            background: rgba(28, 30, 22, 0.62);
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+            padding: 36px 44px;
+            border-radius: 3px;
+          "
+        >
+          <p
+            style="
+              margin: 0 0 16px;
+              font-size: 14px;
+              letter-spacing: 0.22em;
+              text-transform: uppercase;
+              color: #d8d2c2;
+            "
+          >
+            La terrazza e il giardino
+          </p>
+          <h1
+            style="
+              margin: 0;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-weight: 500;
+              font-size: 64px;
+              line-height: 1.05;
+              color: #f4f1ea;
+            "
+          >
+            Qui il lusso è il silenzio.
+          </h1>
+          <p
+            style="
+              margin: 20px auto 0;
+              max-width: 600px;
+              font-size: 18px;
+              line-height: 1.6;
+              color: #ede7da;
+            "
+          >
+            Niente traffico, niente frenesia, niente clacson. Solo le querce, il
+            cielo aperto e il tempo che torna a scorrere piano.
+          </p>
+        </div>
+      </section>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 120px 5% 48px;
+          box-sizing: border-box;
+        "
+      >
+        <h2
+          style="
+            margin: 0 0 56px;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-weight: 500;
+            font-size: 52px;
+            line-height: 1.05;
+            max-width: 760px;
+          "
+        >
+          Una giornata in terrazza, dall'alba alle stelle
+        </h2>
+        <ol
+          style="
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 32px;
+          "
+        >
+          <li
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              border-top: 1px solid #2b2a26;
+              padding-top: 24px;
+            "
+          >
+            <span
+              style="
+                font-size: 13px;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: #5e5a50;
+              "
+              >Alba</span
+            >
+            <span
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 28px;
+                font-weight: 600;
+              "
+              >La luce sulla valle</span
+            >
+            <span style="font-size: 16px; line-height: 1.6; color: #4e4a41"
+              >La nebbia che si alza dalle colline, il primo caffè in
+              silenzio.</span
+            >
+          </li>
+          <li
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              border-top: 1px solid #2b2a26;
+              padding-top: 24px;
+            "
+          >
+            <span
+              style="
+                font-size: 13px;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: #5e5a50;
+              "
+              >Mattina</span
+            >
+            <span
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 28px;
+                font-weight: 600;
+              "
+              >Colazione all'aperto</span
+            >
+            <span style="font-size: 16px; line-height: 1.6; color: #4e4a41"
+              >Senza fretta, con il canto degli uccelli come unico
+              sottofondo.</span
+            >
+          </li>
+          <li
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              border-top: 1px solid #2b2a26;
+              padding-top: 24px;
+            "
+          >
+            <span
+              style="
+                font-size: 13px;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: #5e5a50;
+              "
+              >Pomeriggio</span
+            >
+            <span
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 28px;
+                font-weight: 600;
+              "
+              >Un libro all'ombra</span
+            >
+            <span style="font-size: 16px; line-height: 1.6; color: #4e4a41"
+              >Il giardino per riposare al rientro dal mare o dagli scavi.</span
+            >
+          </li>
+          <li
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 14px;
+              border-top: 1px solid #2b2a26;
+              padding-top: 24px;
+            "
+          >
+            <span
+              style="
+                font-size: 13px;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                color: #5e5a50;
+              "
+              >Sera</span
+            >
+            <span
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 28px;
+                font-weight: 600;
+              "
+              >Il cielo stellato</span
+            >
+            <span style="font-size: 16px; line-height: 1.6; color: #4e4a41"
+              >Lontano dalle luci della città, le stelle tornano visibili.</span
+            >
+          </li>
+        </ol>
+      </section>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 72px 5% 0;
+          box-sizing: border-box;
+        "
+      >
+        <h2
+          style="
+            margin: 0 0 12px;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-weight: 500;
+            font-size: 46px;
+            line-height: 1.1;
+          "
+        >
+          Intorno a casa: querce, camelie, anatre
+        </h2>
+        <p
+          style="
+            margin: 0;
+            max-width: 680px;
+            font-size: 18px;
+            line-height: 1.65;
+            color: #4e4a41;
+          "
+        >
+          Un bosco di querce alle spalle, le camelie in fiore a fine inverno, le
+          anatre che attraversano il prato. La campagna, qui, si fa sentire solo
+          con i suoi suoni.
+        </p>
+      </section>
+      <section
+        aria-label="Galleria della terrazza e del giardino"
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 72px 5%;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 16px;
+        "
+      >
+        <div
+          role="img"
+          aria-label="Colazione all'aperto (foto temporanea)"
+          style="
+            min-height: 420px;
+            background: #d6cdbb
+              url(&quot;https://images.unsplash.com/photo-1766766788517-4bc7b9aff43a?auto=format&fit=crop&w=1600&q=70&quot;)
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+        <div
+          role="img"
+          aria-label="Camelia in fiore (foto temporanea)"
+          style="
+            min-height: 420px;
+            background: #d6cdbb
+              url('img/terrazza/gard2.jpg')
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+        <div
+          role="img"
+          aria-label="Anatre nello stagno (foto temporanea)"
+          style="
+            min-height: 420px;
+            background: #d6cdbb
+              url('img/terrazza/farina.jpg')
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #d8d2c2;
+          "
+        >
+        </div>
+        <div
+          role="img"
+          aria-label="Bosco di querce (foto temporanea)"
+          style="
+            min-height: 420px;
+            background: #d6cdbb
+              url('img/terrazza/gard6.jpg')
+              20% 80% / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+      </section>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 48px 5% 120px;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 48px 80px;
+          align-items: start;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-style: italic;
+            font-size: 40px;
+            line-height: 1.25;
+            color: #2b2a26;
+          "
+        >
+          Si viene per vedere la Costiera. Si torna per la quiete della sera.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 18px">
+          <h3
+            style="
+              margin: 0;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-weight: 600;
+              font-size: 30px;
+            "
+          >
+            Gli spazi esterni
+          </h3>
+          <ul
+            style="
+              margin: 0;
+              padding: 0 0 0 20px;
+              display: grid;
+              gap: 12px;
+              font-size: 17px;
+              line-height: 1.55;
+              color: #4e4a41;
+            "
+          >
+            <li>
+              Terrazza panoramica di [XX] m², ad uso [esclusivo / condiviso]
+            </li>
+            <li>Tavolo e sedute per [X] persone</li>
+            <li>[Pergolato / ombrellone] per le ore calde</li>
+            <li>Giardino con [prato, alberi da frutto, orto…]</li>
+            <li>[Barbecue / forno a legna, se presente]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        style="
+          background: #4a5634;
+          color: #f4f1ea;
+          padding: 72px 5%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 24px;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 38px;
+            font-style: italic;
+          "
+        >
+          Prenota qualche notte di quiete.
+        </p>
+        <a
+          href="contatti.html"
+          style="
+            background: #f4f1ea;
+            color: #2b2a26;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 16px 28px;
+            border-radius: 2px;
+          "
+          >Richiedi disponibilità</a
+        >
+      </section>
+
+      <footer
+        style="
+          background: #2b2a26;
+          color: #d8d2c2;
+          padding: 56px 5%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 24px 48px;
+          font-size: 15px;
+          line-height: 1.7;
+        "
+      >
+        <div>
+          <div
+            style="
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-size: 26px;
+              color: #f4f1ea;
+            "
+          >
+            La Terrazza
+          </div>
+          <div>[Indirizzo] · Valle dell'Irno (SA)</div>
+        </div>
+        <div>
+          <div>WhatsApp [numero] · [email]</div>
+          <div>CIN [codice identificativo nazionale]</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

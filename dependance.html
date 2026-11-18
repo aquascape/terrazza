@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Terrazza – La dependance</title>
+    <meta
+      name="description"
+      content="La dependance: ambienti, dotazioni e caratteristiche del B&B La Terrazza."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background: #f4f1ea;
+      }
+      a {
+        color: #4a5634;
+      }
+      a:hover {
+        color: #2f3820;
+      }
+    </style>
+    <style>
+      /* Galleria: 3 colonne.
+         Righe 1-2 (200px ciascuna): foto grande su 2 colonne + 2 foto piccole a destra.
+         Riga 3 (400px): quercia + foto larga, più alta per mostrarla intera. */
+      .galleria {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: 200px 200px 400px;
+        gap: 16px;
+      }
+      .galleria .g-grande { grid-column: span 2; grid-row: span 2; }
+      .galleria .g-larga { grid-column: span 2; }
+      /* Tablet: 2 colonne */
+      @media (max-width: 1000px) {
+        .galleria { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 180px 180px 220px 340px; }
+        .galleria .g-larga { grid-column: span 1; }
+      }
+      /* Smartphone: una colonna */
+      @media (max-width: 600px) {
+        .galleria { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-rows: 240px; }
+        .galleria .g-grande { grid-column: span 1; grid-row: span 1; height: 300px; }
+        .galleria .g-larga { grid-column: span 1; height: 300px; }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
+    <div
+      style="
+        font-family: &quot;Mulish&quot;, sans-serif;
+        color: #2b2a26;
+        background: #f4f1ea;
+        min-height: 100vh;
+      "
+    >
+      <header
+        class="site-header"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px 32px;
+          padding: 20px 5%;
+          border-bottom: 1px solid #ddd6c8;
+          background: #f4f1ea;
+        "
+      >
+        <a
+          href="index.html"
+          style="
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #2b2a26;
+            text-decoration: none;
+          "
+          >La Terrazza</a
+        >
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="menu-principale"
+          aria-label="Apri il menu"
+        >
+          <svg
+            class="icon-burger"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <svg
+            class="icon-close"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </button>
+        <nav
+          id="menu-principale"
+          class="site-nav"
+          aria-label="Principale"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 28px;
+            font-size: 15px;
+            font-weight: 600;
+          "
+        >
+          <a
+            href="dependance.html"
+            aria-current="page"
+            style="
+              color: #4a5634;
+              text-decoration: underline;
+              text-underline-offset: 6px;
+              padding: 12px 0;
+            "
+            >La dependance</a
+          >
+          <a
+            href="terrazza.html"
+            style="color: #2b2a26; text-decoration: none; padding: 12px 0"
+            >Terrazza e giardino</a
+          >
+          <a
+            href="dintorni.html"
+            style="color: #2b2a26; text-decoration: none; padding: 12px 0"
+            >Nei dintorni</a
+          >
+          <a
+            href="contatti.html"
+            style="
+              color: #ffffff;
+              background: #4a5634;
+              text-decoration: none;
+              padding: 12px 22px;
+              border-radius: 2px;
+            "
+            >Richiedi disponibilità</a
+          >
+        </nav>
+      </header>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 96px 5% 56px;
+          box-sizing: border-box;
+        "
+      >
+        <p
+          style="
+            margin: 0 0 16px;
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #5e5a50;
+          "
+        >
+          Gli ambienti
+        </p>
+        <h1
+          style="
+            margin: 0;
+            max-width: 820px;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-weight: 500;
+            font-size: 76px;
+            line-height: 1;
+          "
+        >
+          La dependance
+        </h1>
+        <p
+          style="
+            margin: 24px 0 0;
+            max-width: 680px;
+            font-size: 20px;
+            line-height: 1.65;
+            color: #4e4a41;
+          "
+        >
+          Una casa nella casa: indipendente, raccolta, costruita con i materiali
+          della collina. Pensata per chi vuole i propri spazi e la propria
+          quiete.
+        </p>
+      </section>
+
+      <section
+        class="galleria"
+        aria-label="Galleria fotografica"
+        style="max-width: 1240px; margin: 0 auto; padding: 0 5%; box-sizing: border-box"
+      >
+        <div
+          class="g-grande"
+          role="img"
+          aria-label="La dependance"
+          style="
+            background: #d6cdbb url(&quot;img/dependance/dep1.jpg&quot;) center /
+              cover no-repeat;
+          "
+        ></div>
+        <div
+          class="g-piccola"
+        role="img"
+          aria-label="Tavola apparecchiata per la colazione (foto temporanea)"
+          style="
+            background: #d6cdbb
+              url('img/dependance/dep3.jpg')
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+        <div
+          class="g-piccola"
+        role="img"
+          aria-label="Stanza rustica luminosa (foto temporanea)"
+          style="
+            background: #d6cdbb
+              url('img/terrazza/gard6.jpg')
+              center 80% / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+        <div
+          class="g-piccola"
+          role="img"
+          aria-label="Tronco e rami di una quercia"
+          style="
+            background: #d6cdbb
+              url('img/terrazza/gard1.jpg')
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+          >
+        </div>
+        <div
+          class="g-larga"
+          role="img"
+          aria-label="Grande albero in un campo "
+          style="
+            background: #d6cdbb
+              url('img/dependance/dep2.jpg')
+              center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            box-sizing: border-box;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #3f3b33;
+          "
+        >
+        </div>
+      </section>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 104px 5% 56px;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 48px 80px;
+        "
+      >
+        <h2
+          style="
+            margin: 0;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-weight: 500;
+            font-size: 46px;
+            line-height: 1.1;
+          "
+        >
+          Semplice, come una casa di campagna. Comoda, come la si desidera.
+        </h2>
+        <div style="font-size: 18px; line-height: 1.7; color: #4e4a41">
+          <p style="margin: 0 0 20px">
+            Muri spessi che d'estate tengono il fresco, travi a vista, tessuti
+            naturali. La dependance ha un ingresso indipendente e si affaccia
+            direttamente sul giardino.
+          </p>
+          <p style="margin: 0">
+            [Descrizione personale: la storia della casa, chi la abita, un
+            dettaglio che gli ospiti ricordano.]
+          </p>
+        </div>
+      </section>
+
+      <section
+        style="
+          max-width: 1240px;
+          margin: 0 auto;
+          padding: 0 5% 120px;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 32px;
+        "
+      >
+        <div
+          style="
+            background: #ebe5d8;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          "
+        >
+          <h3
+            style="
+              margin: 0;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-weight: 600;
+              font-size: 30px;
+            "
+          >
+            In breve
+          </h3>
+          <dl
+            style="
+              margin: 0;
+              display: grid;
+              grid-template-columns: auto 1fr;
+              gap: 14px 24px;
+              font-size: 16px;
+            "
+          >
+            <dt style="color: #5e5a50">Superficie</dt>
+            <dd style="margin: 0; font-weight: 600">[XX] m²</dd>
+            <dt style="color: #5e5a50">Ospiti</dt>
+            <dd style="margin: 0; font-weight: 600">fino a [X] persone</dd>
+            <dt style="color: #5e5a50">Camere</dt>
+            <dd style="margin: 0; font-weight: 600">
+              [X] camera, [tipo di letto]
+            </dd>
+            <dt style="color: #5e5a50">Bagni</dt>
+            <dd style="margin: 0; font-weight: 600">
+              [X], con [doccia / vasca]
+            </dd>
+            <dt style="color: #5e5a50">Ingresso</dt>
+            <dd style="margin: 0; font-weight: 600">indipendente</dd>
+          </dl>
+        </div>
+        <div
+          style="
+            background: #ebe5d8;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          "
+        >
+          <h3
+            style="
+              margin: 0;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-weight: 600;
+              font-size: 30px;
+            "
+          >
+            Dotazioni
+          </h3>
+          <ul
+            style="
+              margin: 0;
+              padding: 0 0 0 20px;
+              display: grid;
+              gap: 12px;
+              font-size: 16px;
+              line-height: 1.5;
+            "
+          >
+            <li>[Wi-Fi]</li>
+            <li>[Aria condizionata / riscaldamento]</li>
+            <li>[Angolo cottura con frigorifero]</li>
+            <li>[Macchina del caffè]</li>
+            <li>[Biancheria e asciugamani]</li>
+            <li>[Asciugacapelli e set di cortesia]</li>
+          </ul>
+        </div>
+        <div
+          style="
+            background: #ebe5d8;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          "
+        >
+          <h3
+            style="
+              margin: 0;
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-weight: 600;
+              font-size: 30px;
+            "
+          >
+            Buono a sapersi
+          </h3>
+          <ul
+            style="
+              margin: 0;
+              padding: 0 0 0 20px;
+              display: grid;
+              gap: 12px;
+              font-size: 16px;
+              line-height: 1.5;
+            "
+          >
+            <li>Check-in [dalle 00:00] · Check-out [entro le 00:00]</li>
+            <li>Colazione: [inclusa / su richiesta]</li>
+            <li>Parcheggio: [privato / in strada]</li>
+            <li>Animali: [ammessi / non ammessi]</li>
+            <li>Consigliata l'auto per raggiungere la struttura</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        style="
+          background: #4a5634;
+          color: #f4f1ea;
+          padding: 72px 5%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 24px;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 38px;
+            font-style: italic;
+          "
+        >
+          Ti immagini già qui?
+        </p>
+        <a
+          href="contatti.html"
+          style="
+            background: #f4f1ea;
+            color: #2b2a26;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 16px 28px;
+            border-radius: 2px;
+          "
+          >Richiedi disponibilità</a
+        >
+      </section>
+
+      <footer
+        style="
+          background: #2b2a26;
+          color: #d8d2c2;
+          padding: 56px 5%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 24px 48px;
+          font-size: 15px;
+          line-height: 1.7;
+        "
+      >
+        <div>
+          <div
+            style="
+              font-family: &quot;Cormorant Garamond&quot;, serif;
+              font-size: 26px;
+              color: #f4f1ea;
+            "
+          >
+            La Terrazza
+          </div>
+          <div>[Indirizzo] · Valle dell'Irno (SA)</div>
+        </div>
+        <div>
+          <div>WhatsApp [numero] · [email]</div>
+          <div>CIN [codice identificativo nazionale]</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

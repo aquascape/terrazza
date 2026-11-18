@@ -1,0 +1,27 @@
+/* Piccoli aggiustamenti per schermi stretti */
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%;display:block}
+@media (max-width: 760px){
+  h1{font-size:52px !important;line-height:1.05 !important}
+  h2{font-size:34px !important}
+  section[aria-label] > div[style*="span 2"]{grid-column:auto !important}
+  [style*="height: 720px"]{height:auto !important;min-height:600px;padding-top:120px}
+  form, form + div{padding:0}
+}
+
+/* Menu a burger su smartphone */
+.menu-toggle{display:none}
+.menu-toggle .icon-close{display:none}
+@media (max-width: 760px){
+  .site-header{position:sticky;top:0;z-index:50;padding-top:12px !important;padding-bottom:12px !important}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;padding:0;
+    background:transparent;border:1px solid #C9C3B3;border-radius:2px;color:#2B2A26;cursor:pointer}
+  .menu-toggle:focus-visible{outline:2px solid #4A5634;outline-offset:2px}
+  .site-header.open .menu-toggle .icon-burger{display:none}
+  .site-header.open .menu-toggle .icon-close{display:block}
+  .site-nav{display:none !important;width:100%;flex-direction:column !important;align-items:stretch !important;
+    gap:0 !important;padding:4px 0 16px;border-top:1px solid #DDD6C8}
+  .site-header.open .site-nav{display:flex !important}
+  .site-nav a{padding:16px 4px !important;font-size:18px !important;border-bottom:1px solid #E6E0D3}
+  .site-nav a:last-child{margin-top:16px;text-align:center;border-bottom:0;padding:16px 22px !important}
+}
