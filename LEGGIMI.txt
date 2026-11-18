@@ -1,0 +1,23 @@
+IL POGGIO QUIETO – sito statico
+
+File:
+  index.html       Home
+  dependance.html  La dependance
+  terrazza.html    La terrazza e il giardino
+  dintorni.html    Nei dintorni
+  contatti.html    Contatti e prenotazioni
+  style.css        Aggiustamenti per smartphone
+
+Prima di pubblicare:
+1. Sostituisci tutti i testi tra [parentesi quadre] (numero, email, indirizzo, CIN, dotazioni...).
+2. In contatti.html cambia WHATSAPP = "39XXXXXXXXXX" con il tuo numero (prefisso 39, senza + e spazi)
+   e cambia anche il link https://wa.me/39XXXXXXXXXX e mailto: nella stessa pagina.
+3. Foto: per ora ci sono FOTO TEMPORANEE prese da Unsplash e Wikimedia (cerca "foto temporanea" nei file).
+   Per sostituirle: crea una cartella "foto" accanto ai file html, metti le tue immagini e
+   nello style del riquadro cambia l'indirizzo dentro url('...') con, ad esempio, url('foto/terrazza.jpg').
+   Poi cancella il link "Foto temporanea · ..." e aggiorna l'aria-label con una descrizione della tua foto.
+   Nota: la foto di Paestum (Wikimedia, CC BY-SA 3.0) richiede di lasciare il credito all'autore finché la usi.
+4. Il modulo apre WhatsApp con la richiesta già scritta: non serve nessun server.
+
+Pubblicazione: carica l'intera cartella su qualsiasi hosting statico
+(Netlify, GitHub Pages, Cloudflare Pages o lo spazio web del tuo dominio).
